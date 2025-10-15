@@ -48,11 +48,7 @@ Para executar este projeto localmente, siga os passos abaixo.
 
 ## 📊 Fonte dos Dados
 
-Os dados foram extraídos do [Relatório Anual de Gestão (RAG) de 2024](relatorio-anual-de-gestao-2024-rag.pdf) da Secretaria de Saúde de Santa Maria/RS.
+Os dados foram extraídos do [Relatório Anual de Gestão (RAG) de 2024](pdfs/relatorio-anual-de-gestao-2024-rag.pdf) da Secretaria de Saúde de Santa Maria/RS.
 
 ---
 
-## 👤 Autor
-
-* **Leonardo Waechter**
-    * [GitHub](https://github.com/leowaechter)
