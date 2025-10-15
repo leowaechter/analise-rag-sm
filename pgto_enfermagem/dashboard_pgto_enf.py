@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go # Importação necessária para a linha de tendência
+import plotly.graph_objects as go
 import locale
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
@@ -21,7 +21,7 @@ def formatar_moeda(valor):
     except (ValueError, TypeError):
         return "R$ 0,00"
 
-# Função para carregar e preparar os dados (com cache para performance)
+# Função para carregar e preparar os dados
 @st.cache_data
 def carregar_dados(caminho_arquivo):
     df = pd.read_csv(caminho_arquivo)
@@ -106,7 +106,7 @@ else:
             fig_pizza = px.pie(df_soma_categorias, names='Categoria', values='Valor', title='Distribuição Percentual por Categoria (Total)')
             st.plotly_chart(fig_pizza, use_container_width=True)
 
-    ### --- NOVA ABA: ANÁLISE ESTRATÉGICA --- ###
+    ### --- ANÁLISE ESTRATÉGICA --- ###
     with tab_estrategica:
         st.header("Análises para Tomada de Decisão")
 

@@ -2,17 +2,16 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import numpy as np # Importação necessária para a condição
-# Para o mapa (opcional, se você tiver o arquivo GeoJSON)
+import numpy as np 
 import folium
 from streamlit_folium import st_folium
 import json
 
 # --- 1. Configurações Visuais (Cores e Fontes) ---
 CORES_SITUACAO = {
-    'Confirmados': '#d62728',      # Vermelho forte para alerta
-    'Em Investigação': '#ff7f0e', # Laranja para atenção
-    'Descartados': '#1f77b4'       # Azul neutro
+    'Confirmados': '#d62728',     
+    'Em Investigação': '#ff7f0e', 
+    'Descartados': '#1f77b4'     
 }
 
 CORES_COMPOSICAO = {
