@@ -6,6 +6,7 @@
 
 Análise e visualização de dados da saúde pública de Santa Maria/RS, com base no Relatório Anual de Gestão (RAG) de 2024. O projeto inclui dashboards interativos sobre casos de Dengue e repasses financeiros para a Enfermagem.
 
+---
 ## ⚙️ Como Usar
 
 Para executar este projeto localmente, siga os passos abaixo.
@@ -24,11 +25,18 @@ Para executar este projeto localmente, siga os passos abaixo.
     ```
 
 2.  **Crie e ative um ambiente virtual:**
-    ```bash
-    # Para Linux/macOS
-    python3 -m venv .venv
-    source .venv/bin/activate
-    ```
+
+    * **No Linux/macOS:**
+        ```bash
+        python3 -m venv .venv
+        source .venv/bin/activate
+        ```
+
+    * **No Windows:**
+        ```bash
+        python -m venv .venv
+        .venv\Scripts\activate
+        ```
 
 3.  **Instale as dependências:**
     ```bash
@@ -38,10 +46,12 @@ Para executar este projeto localmente, siga os passos abaixo.
 4.  **Execute os dashboards:**
     * Para o dashboard de Dengue:
         ```bash
-        streamlit run dashboard_map_sm.py
+        cd dengue_sm/
+        streamlit run dashboard_dengue_sm.py
         ```
     * Para o dashboard de Repasses da Enfermagem:
         ```bash
+        cd pgto_enfermagem/
         streamlit run dashboard_pgto_enf.py
         ```
 ---
@@ -51,4 +61,3 @@ Para executar este projeto localmente, siga os passos abaixo.
 Os dados foram extraídos do [Relatório Anual de Gestão (RAG) de 2024](pdfs/relatorio-anual-de-gestao-2024-rag.pdf) da Secretaria de Saúde de Santa Maria/RS.
 
 ---
-
